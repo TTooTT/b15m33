@@ -26,4 +26,5 @@ class User < ActiveRecord::Base
   end
 
 
+  validates_formatting_of :ip_v4_test, using: :ip_address_v4
 end
